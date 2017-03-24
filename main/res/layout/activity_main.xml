@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.vishnuapp.restaurant.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/backgroung"
+        android:scaleType = "centerCrop"
+        android:id="@+id/imageView2" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/reservation_icon_100"
+                android:id="@+id/imageButton"
+                android:layout_weight="1"
+                style="@android:style/Widget.Holo.Light.ImageButton"
+                android:onClick="openReservationActivity" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/event_icon_100"
+                android:id="@+id/imageButton2"
+                android:layout_weight="1"
+                style="@android:style/Widget.Holo.Light.ImageButton"
+                android:onClick="openEventsActivity" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/menu_icon_100"
+                android:id="@+id/imageButton3"
+                android:layout_weight="1"
+                style="@android:style/Widget.Holo.Light.ImageButton"
+                android:onClick="openMenuActivity" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/location_icon_100"
+                android:id="@+id/imageButton4"
+                android:layout_weight="1"
+                style="@android:style/Widget.Holo.Light.ImageButton"
+                android:onClick="openLocationActivity" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/testimonial_icon_100"
+                android:id="@+id/imageButton7"
+                android:layout_weight="1"
+                style="@android:style/Widget.Holo.Light.ImageButton"
+                android:onClick="openTestimonialActivity" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
